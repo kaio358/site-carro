@@ -1,1 +1,39 @@
-body{margin: 0;}
+:root{
+    --nasturcian-flower:#e84118;
+    --blue-nights:#353b48;
+    --lynx-white:#f5f6fa;
+    --mazarine-blue:#273c75;
+}
+
+body{margin: 0;font-family: 'Inter', sans-serif; }
+a{
+    text-decoration: none;
+    color: var(--lynx-white);
+}
+
+#parte_superior{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--lynx-white);
+}
+
+nav{
+
+}
+main{
+    background-color: var(--blue-nights);
+}
+
+#carrossel{
+    position: relative;
+    left: 25%;
+    padding: 5px;
+    width: 50%;
+    background-color: var(--mazarine-blue);
+   
+}
+
+.fundo_destacado img{
+    width: 70%;
+}
