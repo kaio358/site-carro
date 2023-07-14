@@ -4,6 +4,10 @@
     --lynx-white:#f5f6fa;
     --mazarine-blue:#273c75;
 }
+@font-face {
+    font-family: Heebo-Regular ;
+    src: url(../fonts/Heebo/static/Heebo-Regular.ttf);
+}
 
 body{margin: 0;font-family: 'Inter', sans-serif; }
 a{
@@ -18,8 +22,8 @@ a{
     color: var(--lynx-white);
 }
 
-nav{
-
+nav a{
+    margin:  5px;
 }
 main{
     background-color: var(--blue-nights);
@@ -30,10 +34,70 @@ main{
     left: 25%;
     padding: 5px;
     width: 50%;
-    background-color: var(--mazarine-blue);
+    background-color: var(--lynx-white);
    
+}
+#info-destaque{
+    display: flex;
+}
+.texto_carro_destacado{
+    font-family: 'Heebo-Regular';
+    
+}
+.texto_carro_destacado h1{
+    color: var(--nasturcian-flower);
+    font-size: 80px;
+   
+ 
+    margin: 0;
+   
+}
+.texto_carro_destacado h2{
+    
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+   
+}
+.fundo_destacado{
+    position: relative;
 }
 
 .fundo_destacado img{
-    width: 70%;
+    
+    width: 100%;
+
+}
+@media screen and (max-width: 767px){
+    
+    .fundo_destacado img{
+        width: 100%;
+
+    }
+}
+/* telas pequenas, laptops */
+@media screen and ( min-width: 768px) and (max-width:1023){
+    .texto_carro_destacado h1{
+    
+        font-size: 40px;
+    
+    }
+    .texto_carro_destacado h2{
+    
+        font-size: 20px;
+    
+    }
+       
+    .fundo_destacado img{
+    
+        width: 100%;
+
+    }
+}
+
+@media screen and ( min-width: 1024px) {
+    .fundo_destacado img{
+        width: 150%;
+
+    }
 }
