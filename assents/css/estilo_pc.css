@@ -27,18 +27,43 @@ nav a{
 }
 main{
     background-color: var(--blue-nights);
+    padding-bottom: 5px;
 }
 
+/* carrossel  */
 #carrossel{
     position: relative;
-    left: 25%;
     padding: 5px;
-    width: 50%;
-    background-color: var(--lynx-white);
+
    
 }
-#info-destaque{
+.principal-carrossel{
+
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* seta do carrossel  */
+.seta{
+    height: 50px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+
+
+}
+.seta_direita{
+    right: 50px;
+}
+.seta_esquerda{
+    left: 50px;
+}
+
+#info-destaque{
+    width: 50%;
+    display: flex;
+    background-color: var(--lynx-white);
 }
 .texto_carro_destacado{
     font-family: 'Heebo-Regular';
@@ -62,21 +87,40 @@ main{
 .fundo_destacado{
     position: relative;
 }
-
-.fundo_destacado img{
-    
-    width: 100%;
+.posicao{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    gap: 50px;
+}
+.itens-carrossel{
+    background-color: var(--lynx-white);
+    padding: 10px;
+    border-radius: 50%;
+  
 
 }
+
 @media screen and (max-width: 767px){
+    .texto_carro_destacado h1{
     
-    .fundo_destacado img{
-        width: 100%;
+        font-size: 20px;
+    
+    }
+    .texto_carro_destacado h2{
+    
+        font-size: 10px;
+    
+    }
+    .carro_destaque{
+        width: 150%;
 
     }
 }
 /* telas pequenas, laptops */
-@media screen and ( min-width: 768px) and (max-width:1023){
+@media  ( min-width: 768px) and (max-width:1023){
     .texto_carro_destacado h1{
     
         font-size: 40px;
@@ -88,15 +132,15 @@ main{
     
     }
        
-    .fundo_destacado img{
+    .carro_destaque{
     
-        width: 100%;
+        width: 50%;
 
     }
 }
 
 @media screen and ( min-width: 1024px) {
-    .fundo_destacado img{
+    .carro_destaque{
         width: 150%;
 
     }

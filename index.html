@@ -17,25 +17,57 @@
             </nav>
         </header>
         <section id="carrossel" >
-            <!-- <img src="assents/imgs/icons/back.png" alt="" class="seta"> -->
-            <div id="info-destaque">
-                <div class="texto_carro_destacado">
-                    <h2>Ford</h2>
-                    <h1>Escape</h1>
-                    
-                </div>
-                <div class="fundo_destacado">
-                    <img src="assents/imgs/ford/escape_fechado_frente.png" alt=""  >
-                </div>
-              
+            <div class="principal-carrossel">
 
+                <img src="assents/imgs/icons/back.png" alt="" class="seta seta_esquerda" onclick="muda(false)">
+                <div id="info-destaque">
+                    <div class="texto_carro_destacado">
+                        <h2>Ford</h2>
+                        <h1>Escape</h1>
+                        
+                    </div>
+                    <div class="fundo_destacado">
+                        <img src="assents/imgs/ford/escape_fechado_frente.png" alt=""  class="carro_destaque" >
+                    </div>
+                  
+    
+                </div>
+               
+                <img src="assents/imgs/icons/right-arrow.png" alt="" class="seta seta_direita" onclick="muda(true)">
             </div>
-           
-            <!-- <img src="assents/imgs/icons/right-arrow.png" alt="" class="seta"> -->
+            <div class="posicao">
+                <div class="itens-carrossel item-carrossel-1">
+    
+                </div>
+                <div class="itens-carrossel item-carrossel-2">
+    
+                </div>
+                <div class="itens-carrossel item-carrossel-3">
+    
+                </div>
+            </div>
         </section>
     </main>
+    <section id="cards">
+        <div class="card">
+            <div class="carro_amostra">
+                <img src="https://via.placeholder.com/200" alt="">
+            </div>
+            <div class="info-carro">
+                <h1 >Nome</h1>
+                <div class="conteudo-carro">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati beatae excepturi at officiis facere vero est cum. Fuga cum, accusantium eos error voluptatibus tempore aliquam perspiciatis ab, vero suscipit adipisci!
+                </div>
+            </div>
+            <div class="montante">
+                <div class="preço_carro"></div><div class="promocao"></div>
+            </div>
+        </div>
+    </section>
     <div id="cards">
 
     </div>
+
+    <script src="assents/scripts/carrossel.js"></script>
 </body>
 </html>
