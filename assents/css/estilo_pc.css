@@ -8,6 +8,10 @@
     font-family: Heebo-Regular ;
     src: url(../fonts/Heebo/static/Heebo-Regular.ttf);
 }
+@font-face {
+    font-family: Poppins-light ;
+    src: url(../fonts/InterPoppins/Poppins/Poppins-Light.ttf);
+}
 
 body{margin: 0;font-family: 'Inter', sans-serif; }
 a{
@@ -89,6 +93,7 @@ main{
 }
 .posicao{
     margin-top: 50px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,6 +108,33 @@ main{
 
 }
 
+/* cards  */
+#cards{
+  
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    font-family: Poppins-light;
+}
+.card{
+    flex-basis: calc(25% - 20px);
+    width: 250px;
+    height: 530px;
+
+    text-align: center;
+    margin: 10px; 
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgb(97, 94, 94);
+}
+.carro_amostra{
+    width: 250px;
+}
+.montante{
+    margin-top: 20px;
+    font-size: 30px;
+}
 @media screen and (max-width: 767px){
     .texto_carro_destacado h1{
     

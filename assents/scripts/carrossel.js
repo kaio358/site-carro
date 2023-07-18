@@ -3,7 +3,7 @@ var index = 0
 item[index].style. background = "var( --mazarine-blue)"
 item[index].style.padding = "15px"
 function muda(frente =true) {
-    console.log("funciona ?"+ index);
+    
     item[index].style. background = "var(--lynx-white)"
     item[index].style.padding = "10px"
     if(frente){
