@@ -1,3 +1,18 @@
+:root{
+    --nasturcian-flower:#e84118;
+    --blue-nights:#353b48;
+    --lynx-white:#f5f6fa;
+    --mazarine-blue:#273c75;
+}
+@font-face {
+    font-family: Heebo-Regular ;
+    src: url(../fonts/Heebo/static/Heebo-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-light ;
+    src: url(../fonts/InterPoppins/Poppins/Poppins-Light.ttf);
+}
+
 
 body{margin: 0;font-family: 'Inter', sans-serif; }
 a{
@@ -11,15 +26,45 @@ a{
     justify-content: space-around;
     color: var(--lynx-white);
 }
-
-nav a{
+/* menu bar  */
+nav{
+    display: flex;
+}
+nav div{
     margin:  5px;
 }
-main{
-    background-color: var(--blue-nights);
+nav a:hover{
     padding-bottom: 5px;
+    border-bottom: 2px solid var(--nasturcian-flower);
+}
+.opcao_categoria:hover .opcoes {
+    display: block;
 }
 
-footer{
-    
+.opcoes{
+    display: none;
+    position: absolute;
+    margin: 2px;
+    font-family: Poppins-light;
+    background-color: #dcdde1;
+    color: black;
+    list-style: none;
+    padding: 5px;
+    box-shadow: 1px 1px 4px rgb(97, 94, 94);
+    z-index: 3;
+}
+
+/* parte de baixo */
+.rodape{
+    margin-top: 25px;
+    background-color: var(--mazarine-blue);
+    color: white;
+}
+.barra{
+    background-color: var(--nasturcian-flower);
+    padding: 15px;
+}
+.classificados{
+    display: flex;
+    justify-content: space-evenly;
 }

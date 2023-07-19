@@ -1,18 +1,7 @@
-:root{
-    --nasturcian-flower:#e84118;
-    --blue-nights:#353b48;
-    --lynx-white:#f5f6fa;
-    --mazarine-blue:#273c75;
+main{
+    background-color: var(--blue-nights);
+    padding-bottom: 5px;
 }
-@font-face {
-    font-family: Heebo-Regular ;
-    src: url(../fonts/Heebo/static/Heebo-Regular.ttf);
-}
-@font-face {
-    font-family: Poppins-light ;
-    src: url(../fonts/InterPoppins/Poppins/Poppins-Light.ttf);
-}
-
 
 /* carrossel  */
 #carrossel{
