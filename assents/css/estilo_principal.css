@@ -1,0 +1,25 @@
+
+body{margin: 0;font-family: 'Inter', sans-serif; }
+a{
+    text-decoration: none;
+    color: var(--lynx-white);
+}
+
+#parte_superior{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--lynx-white);
+}
+
+nav a{
+    margin:  5px;
+}
+main{
+    background-color: var(--blue-nights);
+    padding-bottom: 5px;
+}
+
+footer{
+    
+}
