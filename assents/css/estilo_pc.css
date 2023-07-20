@@ -77,59 +77,29 @@ main{
 
 }
 
-/* cards  */
-#cards{
-  
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-    font-family: Poppins-light;
-}
-.card{
-    flex-basis: calc(25% - 20px);
-    width: 250px;
-    
-    
 
-    text-align: center;
-    margin: 10px; 
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 4px rgb(97, 94, 94);
-}
-.div_amostra{
-    height: 200px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-}
-.carro_amostra{
-    width: 250px;
-}
-.montante{
-    margin-top: 20px;
-    font-size: 30px;
-}
 @media screen and (max-width: 767px){
     .texto_carro_destacado h1{
     
-        font-size: 20px;
+        font-size: 30px;
     
     }
     .texto_carro_destacado h2{
     
-        font-size: 10px;
+        font-size: 20px;
     
     }
     .carro_destaque{
-        width: 150%;
+        width: 250px;
+        
 
+    }
+    .fundo_destacado{
+        right: 55px;
     }
 }
 /* telas pequenas, laptops */
-@media  ( min-width: 768px) and (max-width:1023){
+@media screen and ( min-width: 768px){
     .texto_carro_destacado h1{
     
         font-size: 40px;
@@ -142,10 +112,11 @@ main{
     }
        
     .carro_destaque{
-    
-        width: 50%;
+        width: 120%;
 
     }
+    
+    
 }
 
 @media screen and ( min-width: 1024px) {
