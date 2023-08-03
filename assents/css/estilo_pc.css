@@ -79,6 +79,12 @@ main{
 
 
 @media screen and (max-width: 767px){
+    .itens-carrossel{
+        padding: 5px;
+    }
+    .seta{
+        height: 30px;
+    }
     .texto_carro_destacado h1{
     
         font-size: 30px;
@@ -97,9 +103,13 @@ main{
     .fundo_destacado{
         right: 55px;
     }
+   
 }
 /* telas pequenas, laptops */
-@media screen and ( min-width: 768px){
+@media screen and ( min-width: 768px) and (max-width: 1023px){
+    .itens-carrossel{
+        padding: 5px;
+    }
     .texto_carro_destacado h1{
     
         font-size: 40px;

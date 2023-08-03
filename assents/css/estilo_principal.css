@@ -66,7 +66,7 @@ nav a:hover{
 /* parte de baixo */
 .rodape{
     margin-top: 25px;
-    background-color: var(--mazarine-blue);
+    background-color: var(--blue-nights);
     color: white;
 }
 .barra{
@@ -117,6 +117,10 @@ nav a:hover{
 
 
 @media screen and (max-width: 767px){
+    .logo{
+        font-size: larger;
+        margin-left: 5px;
+    }
     .icone_menu{
         display: block;
         cursor: pointer;
@@ -147,7 +151,39 @@ nav a:hover{
     }
 }
 
-@media screen and ( min-width: 768px){
+@media screen and ( min-width: 768px) and (max-width:1023px){
+    .logo{
+        font-size: larger;
+        margin-left: 5px;
+    }
+    .icone_menu{
+        display: block;
+        cursor: pointer;
+        padding: 5px;
+    }
+    .menu{
+        display: none;
+
+        position: absolute;
+        right: 0px;
+        z-index: 3;
+        background-color:rgba(97, 94, 94, 0.596) ;
+        padding: 5px;
+        border-radius: 5px;
+      
+
+        flex-direction: column;
+        
+    }
+    
+    #menu-toggle:checked + .menu {
+        display: flex;
+    
+    }
+      
+    #parte_superior{
+        justify-content: space-between;
+    }
     .menu{
         font-size: 20px;
     }
